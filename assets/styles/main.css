@@ -6599,11 +6599,11 @@ a {
     .nav-primary ul li a {
       display: block;
       text-decoration: none;
-      background: orange;
+      background: #17a2b8;
       color: white;
       padding: .5em; }
       .nav-primary ul li a:hover {
-        background: #17a2b8; }
+        background: orange; }
   .nav-primary li ul {
     width: 8em;
     display: none;
@@ -6619,7 +6619,7 @@ a {
     padding: 0;
     margin: 0; }
     .nav-primary li:hover li a {
-      background: orange;
+      background: #17a2b8;
       border-bottom: 1px solid white; }
   .nav-primary li:hover li a:hover {
     background: #17a2b8; }

@@ -54,11 +54,11 @@ $nav-hover: #17a2b8;
     a{
       display: block;
       text-decoration: none;
-      background: $orange;
+      background: $main-color;
       color: white;
       padding: .5em;
       &:hover{
-        background: $main-color;
+        background: $orange;
       }
     }
   }
@@ -79,7 +79,7 @@ $nav-hover: #17a2b8;
     padding: 0;
     margin: 0;
     a{
-     background:$orange;
+     background:$main-color;
      border-bottom: 1px solid white;
     }
   }
