@@ -6579,5 +6579,47 @@ a.text-dark:focus, a.text-dark:hover {
 a {
   color: #17a2b8; }
 
+/*------------------------------------*\
+    #PRIMARY-MENU
+\*------------------------------------*/
+.nav-primary {
+  height: 70px;
+  padding-top: 1em;
+  overflow: hidden; }
+  .nav-primary ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .nav-primary ul li {
+    float: left;
+    margin-left: 1em; }
+    .nav-primary ul li a {
+      display: block;
+      text-decoration: none;
+      background: orange;
+      color: white;
+      padding: .5em; }
+      .nav-primary ul li a:hover {
+        background: green; }
+  .nav-primary li ul {
+    width: 8em;
+    display: none;
+    background: blue; }
+  .nav-primary li:hover ul {
+    display: block;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border-top: 5px solid white; }
+  .nav-primary li:hover li {
+    float: none;
+    padding: 0;
+    margin: 0; }
+    .nav-primary li:hover li a {
+      background: orange;
+      border-bottom: 1px solid white; }
+  .nav-primary li:hover li a:hover {
+    background: linear-gradient(to bottom, orange, green, orange); }
+
 body#tinymce {
   margin: 12px !important; }
