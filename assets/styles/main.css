@@ -96,7 +96,7 @@ hr {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: .8rem; }
+  margin-bottom: .5rem; }
 
 p {
   margin-top: 0;
@@ -6578,6 +6578,12 @@ a.text-dark:focus, a.text-dark:hover {
 
 a {
   color: #17a2b8; }
+  a:hover {
+    color: #252757; }
+
+header a:hover {
+  color: #17a2b8;
+  text-decoration: none; }
 
 .gist .blob-code-inner {
   font-size: 18px !important; }

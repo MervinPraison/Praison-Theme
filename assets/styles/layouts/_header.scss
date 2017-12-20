@@ -18,7 +18,18 @@
 }
 
 a {
+	&:hover{
+		color: $main-dark-color;
+	}
 	color: $main-color;
+}
+header {
+	a {
+		&:hover{
+			color:$main-color;
+			text-decoration: none;
+		}
+	}
 }
 
 .gist .blob-code-inner {
