@@ -6586,8 +6586,8 @@ a {
     #PRIMARY-MENU
 \*------------------------------------*/
 .nav-primary {
-  height: 70px;
-  padding-top: 1em;
+  height: 40px;
+  float: right;
   overflow: hidden; }
   .nav-primary ul {
     list-style: none;
@@ -6603,7 +6603,7 @@ a {
       color: white;
       padding: .5em; }
       .nav-primary ul li a:hover {
-        background: green; }
+        background: #17a2b8; }
   .nav-primary li ul {
     width: 8em;
     display: none;
@@ -6613,7 +6613,7 @@ a {
     position: absolute;
     margin: 0;
     padding: 0;
-    border-top: 5px solid white; }
+    border-top: 0px solid white; }
   .nav-primary li:hover li {
     float: none;
     padding: 0;
@@ -6622,7 +6622,7 @@ a {
       background: orange;
       border-bottom: 1px solid white; }
   .nav-primary li:hover li a:hover {
-    background: linear-gradient(to bottom, orange, green, orange); }
+    background: #17a2b8; }
 
 body#tinymce {
   margin: 12px !important; }

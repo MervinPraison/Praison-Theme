@@ -18,7 +18,7 @@
 }
 
 a {
-	color: #17a2b8;
+	color: $main-color;
 }
 
 .gist .blob-code-inner {
@@ -35,11 +35,14 @@ $green: green;
 $blue: blue;
 $orange: orange;
 $purple: purple;
+$black: black;
+$nav-hover: #17a2b8;
 
 .nav-primary{  
-  height: 70px;
-  padding-top: 1em;
+  height: 40px;
+	float:right;
   overflow: hidden;
+	
   ul{
     list-style: none;
     margin: 0;
@@ -55,7 +58,7 @@ $purple: purple;
       color: white;
       padding: .5em;
       &:hover{
-        background: $green;
+        background: $main-color;
       }
     }
   }
@@ -69,7 +72,7 @@ $purple: purple;
     position: absolute;
     margin: 0;
     padding: 0;
-    border-top: 5px solid white;
+    border-top: 0px solid white;
    }
   li:hover li{
     float: none;
@@ -81,6 +84,6 @@ $purple: purple;
     }
   }
   li:hover li a:hover{
-    background: linear-gradient(to bottom, $orange, $green, $orange);
+    background: $main-color;
   }
 }
