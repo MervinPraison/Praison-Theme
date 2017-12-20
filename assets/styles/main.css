@@ -6585,6 +6585,10 @@ header a:hover {
   color: #17a2b8;
   text-decoration: none; }
 
+footer {
+  background: #f2f2f2;
+  padding: 10px 0px; }
+
 .gist .blob-code-inner {
   font-size: 18px !important; }
 
