@@ -6525,6 +6525,15 @@ h5, .h5 {
 h6, .h6 {
   font-size: 0.8rem; }
 
+.fp-middle {
+  background: #17a2b8; }
+
+.fp-top {
+  background: #f2f2f2; }
+
+.page-header, .entry-title, .sidebar {
+  padding-top: 20px; }
+
 .comment-list ol {
   list-style: none; }
 
@@ -6584,9 +6593,9 @@ h6, .h6 {
   padding: 20px;
   background-color: black; }
 
-.content {
-  padding-top: 20px; }
-
+/*.content{
+	padding-top: 20px;
+}*/
 .brand {
   font-size: 25px;
   font-weight: bold;
