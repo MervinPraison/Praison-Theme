@@ -32,6 +32,20 @@ header {
 	}
 }
 
+.slicknav_menu {
+	display:none;
+}
+
+@media screen and (max-width: 800px) {
+	/* #primary-menu is your theme’s original menu */
+	.nav-primary {
+	display:none;
+	}
+
+	.slicknav_menu {
+	display:block;
+	}
+}
 
 
 .gist .blob-code-inner {
