@@ -15,6 +15,14 @@ function setup() {
   add_theme_support('soil-nice-search');
   add_theme_support('soil-jquery-cdn');
   add_theme_support('soil-relative-urls');
+ 	if ( ! file_exists( get_template_directory() . '/lib/wp-bootstrap-navwalker.php' ) ) {
+	// file does not exist... return an error.
+		return new WP_Error( 'wp-bootstrap-navwalker-missing', __( 'It appears the wp-bootstrap-navwalker.php file may be missing.', 'wp-bootstrap-navwalker' ) );
+	} else {
+		// file exists... require it.
+		require_once get_template_directory() . '/lib/wp-bootstrap-navwalker.php';
+	}  
+
 
   // Make theme available for translation
   // Community translations can be found at https://github.com/roots/sage-translations

@@ -76,9 +76,9 @@
 
 })(jQuery); // Fully reference jQuery after this point.
 
-// Add SlickNav Mobile Menu
+/*// Add SlickNav Mobile Menu
 jQuery(function(){
 	"use strict";
-	jQuery('.nav-primary').slicknav();
-});
+	//jQuery('.navbar-nav').slicknav();
+});*/
 
