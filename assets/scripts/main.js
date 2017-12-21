@@ -75,3 +75,10 @@
   $(document).ready(UTIL.loadEvents);
 
 })(jQuery); // Fully reference jQuery after this point.
+
+// Add SlickNav Mobile Menu
+jQuery(function(){
+	"use strict";
+	jQuery('.nav-primary').slicknav();
+});
+
