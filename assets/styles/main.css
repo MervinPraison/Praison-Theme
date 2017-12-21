@@ -338,19 +338,19 @@ h1, .h1 {
   font-size: 2.5rem; }
 
 h2, .h2 {
-  font-size: 1.7rem; }
+  font-size: 2rem; }
 
 h3, .h3 {
-  font-size: 1.5rem; }
+  font-size: 1.75rem; }
 
 h4, .h4 {
-  font-size: 1.25rem; }
+  font-size: 1.5rem; }
 
 h5, .h5 {
-  font-size: 1rem; }
+  font-size: 1.25rem; }
 
 h6, .h6 {
-  font-size: 0.8rem; }
+  font-size: 1rem; }
 
 .lead {
   font-size: 1.25rem;
@@ -6509,6 +6509,21 @@ a.text-dark:focus, a.text-dark:hover {
 
 h1, .h1 {
   margin-bottom: 1rem; }
+
+h2, .h2 {
+  font-size: 1.7rem; }
+
+h3, .h3 {
+  font-size: 1.5rem; }
+
+h4, .h4 {
+  font-size: 1.3rem; }
+
+h5, .h5 {
+  font-size: 1rem; }
+
+h6, .h6 {
+  font-size: 0.8rem; }
 
 .comment-list ol {
   list-style: none; }
