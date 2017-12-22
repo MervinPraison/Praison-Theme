@@ -22,6 +22,6 @@
     }
   },
   "config": {
-    "devUrl": "http://localhost/misc/roots/raw3/"
+    "devUrl": "http://localhost:8888/wordpress/praison/"
   }
 }
