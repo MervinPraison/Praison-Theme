@@ -6609,14 +6609,15 @@ a {
   a:hover {
     color: #252757; }
 
-header {
-  padding: 20px 0px; }
-  header a:hover {
-    color: #17a2b8;
-    text-decoration: underline; }
-  header .brand:hover {
-    color: #fff;
-    text-decoration: underline; }
+header a:hover {
+  color: #17a2b8;
+  text-decoration: underline; }
+header .brand:hover {
+  color: #fff;
+  text-decoration: underline; }
+
+article header {
+  padding: 10px 0px; }
 
 /*
 .slicknav_menu {

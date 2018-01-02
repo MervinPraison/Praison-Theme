@@ -23,8 +23,7 @@ a {
 	}
 	color: $main-color;
 }
-header {
-	padding: 20px 0px;
+header {	
 	a {
 		&:hover{
 			color:$main-color;
@@ -43,6 +42,12 @@ header {
 			}
 	}
 	
+}
+
+article{
+	header{
+		padding: 10px 0px;
+	}
 }
 
 /*
