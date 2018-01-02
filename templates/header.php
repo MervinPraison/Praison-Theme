@@ -1,5 +1,5 @@
 <header class="banner">
-  <div class="container">
+  <div class="container clearfix">
     <a class="brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
     <!--<span class="navbar-brand">Menu</span>-->
