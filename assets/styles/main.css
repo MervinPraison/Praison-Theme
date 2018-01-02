@@ -6507,22 +6507,23 @@ a.text-dark:focus, a.text-dark:hover {
   visibility: hidden !important; }
 
 h1, .h1 {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  font-size: 2rem; }
 
 h2, .h2 {
-  font-size: 1.7rem; }
-
-h3, .h3 {
   font-size: 1.5rem; }
 
-h4, .h4 {
+h3, .h3 {
   font-size: 1.3rem; }
 
-h5, .h5 {
+h4, .h4 {
   font-size: 1rem; }
 
-h6, .h6 {
+h5, .h5 {
   font-size: 0.8rem; }
+
+h6, .h6 {
+  font-size: 0.6rem; }
 
 .fp-middle {
   background: #17a2b8; }
@@ -6531,7 +6532,7 @@ h6, .h6 {
   background: #f2f2f2; }
 
 .page-header, .entry-title, .sidebar {
-  padding-top: 20px; }
+  padding-top: 30px; }
 
 .comment-list ol {
   list-style: none; }
@@ -6608,11 +6609,14 @@ a {
   a:hover {
     color: #252757; }
 
-header a:hover {
-  color: #17a2b8;
-  text-decoration: none; }
-header nav {
-  margin-top: 10px; }
+header {
+  padding: 20px 0px; }
+  header a:hover {
+    color: #17a2b8;
+    text-decoration: underline; }
+  header .brand:hover {
+    color: #fff;
+    text-decoration: underline; }
 
 /*
 .slicknav_menu {
