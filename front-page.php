@@ -1,7 +1,8 @@
-<div class="fp-top container">
+<div class="container jumbotron">
 	<div class="row p-3">
 		<div class="col-md-6">
 		<h1>Welcome to <?php bloginfo('name'); ?></h1>
+		<p><?php bloginfo('description'); ?></p>
 			<?php get_search_form(); ?>
 		</div>
 		<div class="col-md-6">			
