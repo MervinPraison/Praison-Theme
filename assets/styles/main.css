@@ -6612,6 +6612,8 @@ a {
 header a:hover {
   color: #17a2b8;
   text-decoration: underline; }
+header nav {
+  float: right; }
 header .brand:hover {
   color: #fff;
   text-decoration: underline; }

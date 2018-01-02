@@ -1,6 +1,6 @@
 <header class="banner">
   <div class="container clearfix">
-    <a class="brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+    <a class="brand align-text-bottom" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
     <!--<span class="navbar-brand">Menu</span>-->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
