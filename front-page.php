@@ -1,6 +1,7 @@
 <div class="fp-top container">
 	<div class="row p-3">
 		<div class="col-md-6">
+		<h1>Welcome to <?php bloginfo('name'); ?></h1>
 			<?php get_search_form(); ?>
 		</div>
 		<div class="col-md-6">			
@@ -11,6 +12,12 @@
 	<div class="row p-1">		
 	</div>
 </div>
+
+<?php while (have_posts()) : the_post(); ?>
+  <?php //get_template_part('templates/page', 'header'); ?>
+  <?php get_template_part('templates/content', 'page'); ?>
+  
+<?php endwhile; ?>
 
 <?php //get_template_part('templates/page', 'header'); ?>
 <?php $the_query = new WP_Query( 'posts_per_page=5' ); ?>
@@ -56,9 +63,3 @@
 		</div>
 	</div>
 </div>-->
-
- <?php while (have_posts()) : the_post(); ?>
-  <?php //get_template_part('templates/page', 'header'); ?>
-  <?php get_template_part('templates/content', 'page'); ?>
-  
-<?php endwhile; ?>
