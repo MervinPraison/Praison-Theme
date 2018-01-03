@@ -46,9 +46,8 @@
 			<?php endwhile; ?>
 		</div>
 		<div class="col-md-4">
-			<ul>
-				<li><?php echo wp_tag_cloud(); ?></li>
-			</ul>
+			<div class="clearfix"></div>
+			<?php echo wp_tag_cloud(); ?>			
 			<div class="clearfix"></div>
 			<h2>Categories</h2>
 			<ul>
