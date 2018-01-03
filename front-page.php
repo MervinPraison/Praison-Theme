@@ -28,34 +28,35 @@
   </div>
 <?php endif; ?>
 
-<?php while ($fp_query->have_posts()) : $fp_query->the_post(); ?> 
-  <?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
-<?php endwhile; ?>	 
+<div class="container ">
+	<div class="row p-3">
+		<div class="col-md-8">
 
-<!--
-<div class="container">
-	<div class="row">
+			<?php while ($fp_query->have_posts()) : $fp_query->the_post(); ?> 
+
+			<article <?php post_class(); ?>>
+			  <header>
+				<h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+				<?php get_template_part('templates/entry-meta'); ?>
+			  </header>
+			  <div class="entry-summary">
+				<?php the_excerpt(); ?>
+			  </div>
+			</article>
+			<?php endwhile; ?>
+		</div>
+		<div class="col-md-4">
+			<ul>
+				<?php echo wp_tag_cloud(); ?>
+			</ul>
+			<ul>
+				<?php wp_list_categories( array(
+					'orderby'    => 'name',
+					'show_count' => false,
+					'title_li' => ''
 	
-		<div class="col-md-4 p-4" >
-			<div class="fp-top p-3">
-				<h2>Test</h2>
-			</div>
-			<div class="fp-middle p-1">
-			</div>
-		</div>
-		<div class="col-md-4 p-4" >
-			<div class="fp-top p-3">
-			<h2>Test</h2>
-			</div>
-			<div class="fp-middle p-1">
-			</div>
-		</div>
-		<div class="col-md-4 p-4" >
-			<div class="fp-top p-3">
-			<h2>Test</h2>
-			</div>
-			<div class="fp-middle p-1">
-			</div>
+				) ); ?> 
+			</ul>
 		</div>
 	</div>
-</div>-->
+</div>

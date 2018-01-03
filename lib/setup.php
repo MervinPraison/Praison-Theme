@@ -39,6 +39,7 @@ function setup() {
 		// file exists... require it.
 		require_once get_template_directory() . '/lib/wp-bootstrap-breadcrumb.php';
 	}
+	
 
 
   // Make theme available for translation
