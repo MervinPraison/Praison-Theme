@@ -49,6 +49,7 @@
 			<ul>
 				<?php echo wp_tag_cloud(); ?>
 			</ul>
+			<div class="clearfix"></div>
 			<h2>Categories</h2>
 			<ul>
 				<?php wp_list_categories( array(
