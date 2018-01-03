@@ -47,7 +47,7 @@
 		</div>
 		<div class="col-md-4">
 			<ul>
-				<?php echo wp_tag_cloud(); ?>
+				<li><?php echo wp_tag_cloud(); ?></li>
 			</ul>
 			<div class="clearfix"></div>
 			<h2>Categories</h2>
