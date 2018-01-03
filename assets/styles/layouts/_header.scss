@@ -1,17 +1,10 @@
 .banner {
-	padding: 20px;
-	background-color: black;	
+	padding: 35px;	
 }
 
 /*.content{
 	padding-top: 20px;
 }*/
-
-.brand {
-	font-size: 25px;
-	font-weight: bold;
-	color: white;
-}
 
 .widget {
 	padding:10px;
@@ -36,10 +29,13 @@ header {
     	float:right;
 	}
 	.brand{
-			&:hover{
-				color:$white;
-				text-decoration: underline;
-			}
+		font-size: 25px;
+		font-weight: bold;
+		color: white;
+		&:hover{
+			color:$white;
+			text-decoration: underline;
+		}
 	}
 	
 }
