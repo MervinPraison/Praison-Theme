@@ -2,7 +2,7 @@
   <div class="container">
    	<!--<div class="row">-->
     <!--<a class="brand align-text-bottom" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>-->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark justify-content-end fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
     <!--<span class="navbar-brand">Menu</span>-->
     <a class="brand navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

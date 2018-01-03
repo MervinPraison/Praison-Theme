@@ -42,7 +42,15 @@ header {
 
 article{
 	header{
-		padding: 10px 0px;
+		//padding: 10px 0px;
+	}
+}
+
+.content{
+	main{
+		.jumbotron{
+			margin-bottom: 0rem;
+		}
 	}
 }
 
