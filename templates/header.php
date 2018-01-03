@@ -24,7 +24,7 @@
 		]);
       endif;
       ?>
-      </div>
+      </div>    
     </nav>
 	<!--</div>-->
   </div>

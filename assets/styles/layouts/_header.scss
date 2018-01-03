@@ -1,6 +1,9 @@
 .banner {
 	padding: 35px;	
 }
+img {
+    width: 100%;
+}
 
 /*.content{
 	padding-top: 20px;
@@ -41,13 +44,14 @@ header {
 }
 
 article{
-	header{
+	header{		
 		//padding: 10px 0px;
 	}
 }
 
 .content{
 	main{
+		padding-bottom: 2rem;
 		.jumbotron{
 			margin-bottom: 0rem;
 		}
