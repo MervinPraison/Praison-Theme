@@ -20,6 +20,7 @@
     "jquery.js": {
       "bower": ["jquery"]
     }
+
   },
   "config": {
     "devUrl": "http://localhost/misc/roots/raw3/"

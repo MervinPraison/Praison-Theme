@@ -6534,6 +6534,10 @@ h6, .h6 {
 .page-header, .entry-title, .sidebar {
   padding-top: 30px; }
 
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important; }
+
 .comment-list ol {
   list-style: none; }
 
@@ -6593,7 +6597,7 @@ h6, .h6 {
   padding: 35px; }
 
 img {
-  width: 100%; }
+  max-width: 100%; }
 
 /*.content{
 	padding-top: 20px;
