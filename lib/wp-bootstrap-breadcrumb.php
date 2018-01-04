@@ -14,7 +14,8 @@ function wps_mervin_breadcrumb_bootstrap() {
             '</li></ul>',
             false
         );
-        echo str_replace( '»', '</li>»<li>', $breadcrumb );
+        //echo str_replace( '»', '</li><li>', $breadcrumb );
+		echo $breadcrumb;
     }
 }
 
