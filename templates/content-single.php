@@ -38,6 +38,13 @@
     </div>    
     <br />
     <footer>
+     
+     <?php
+		if(get_the_tag_list()) {
+			echo '<h3>Tags</h3>';
+			echo get_the_tag_list('<ul><li>','</li><li>','</li></ul>');
+		}
+	?>
       <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
     </footer>
     <?php comments_template('/templates/comments.php'); ?>
