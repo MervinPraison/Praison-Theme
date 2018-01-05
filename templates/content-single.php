@@ -44,12 +44,13 @@
 		echo '<h3>Tags</h3>';
 		foreach($tags as $tag) :  ?> 
 			<a class="btn btn-outline-info"
-				href="<?php bloginfo('url');?>/tag/<?php print_r($tag->slug);?>">
+				href="<?php echo get_tag_link($tag->term_id);?>">
 					  <?php print_r($tag->name); ?>
 			 </a> 
 		 <?php endforeach; 
+		 echo '<br /><br />';
 	} ?>
-	<br /><br />
+	
       <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
     </footer>
     <?php comments_template('/templates/comments.php'); ?>
