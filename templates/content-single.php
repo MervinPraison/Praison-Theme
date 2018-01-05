@@ -7,12 +7,12 @@
       <h1 class="entry-title"><?php the_title(); ?></h1>
       <div class="container">
       	<div class="row">      	
-      		<div class="col-md-8 nopadding">
+      		<div class="col-sm-8 nopadding">
       			<?php get_template_part('templates/entry-meta'); ?>			
       		</div>
-      		<div class="col-md-4 nopadding">
-      			<div class="socialmedia-share pb-3">
-				Share on 
+      		<div class="col-sm-4 nopadding">
+      			<div class="socialmedia-share pb-3 ">
+				<span class="">Share on </span>
 					<?php
 					$socialURL = urlencode(get_permalink());
 
@@ -38,13 +38,18 @@
     </div>    
     <br />
     <footer>
-     
-     <?php
-		if(get_the_tag_list()) {
-			echo '<h3>Tags</h3>';
-			echo get_the_tag_list('<ul><li>','</li><li>','</li></ul>');
-		}
-	?>
+    
+	<?php $tags = get_the_tags($post->ID); 
+	if($tags){
+		echo '<h3>Tags</h3>';
+		foreach($tags as $tag) :  ?> 
+			<a class="btn btn-outline-info"
+				href="<?php bloginfo('url');?>/tag/<?php print_r($tag->slug);?>">
+					  <?php print_r($tag->name); ?>
+			 </a> 
+		 <?php endforeach; 
+	} ?>
+	<br /><br />
       <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
     </footer>
     <?php comments_template('/templates/comments.php'); ?>
