@@ -21,7 +21,10 @@
 <?php endwhile; ?>
 
 <?php //get_template_part('templates/page', 'header'); ?>
-<?php $fp_query = new WP_Query( 'posts_per_page=5' ); ?>
+<?php 
+	$paged = (get_query_var('page')) ? get_query_var('page') : 1;
+	$fp_query = new WP_Query( 'posts_per_page=5&paged='.$paged ); 
+?>
 <?php if (!$fp_query->have_posts()) : ?>
   <div class="alert alert-warning">
     <?php _e('Sorry, no results were found.', 'sage'); ?>
@@ -44,6 +47,10 @@
 			  </div>
 			</article>
 			<?php endwhile; ?>
+			<ul class="pagination">
+				<?php if( get_previous_posts_link('&laquo; PREV', $fp_query->max_num_pages) ) { ?> <li class='page-item'><span class='page-link'><?php previous_posts_link( '&laquo; PREV', $fp_query->max_num_pages) ?></span></li><?php } ?>
+				<?php if( get_next_posts_link('NEXT &raquo;', $fp_query->max_num_pages) ) { ?> <li class='page-item'><span class='page-link'><?php next_posts_link( 'NEXT &raquo;', $fp_query->max_num_pages) ?></span></li><?php } ?>
+			</ul>
 		</div>
 		<div class="col-md-4">
 			<div class="clearfix"></div>
