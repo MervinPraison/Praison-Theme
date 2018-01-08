@@ -5,7 +5,13 @@
   <article <?php post_class(); ?>>
     <header>
       <h1 class="entry-title"><?php the_title(); ?></h1>
-      <div class="container">
+    </header>
+    <div class="entry-content">
+      <?php the_content(); ?>
+    </div>    
+    <br />
+    <footer>
+    <div class="container">
       	<div class="row">      	
       		<div class="col-sm-8 nopadding">
       			<?php get_template_part('templates/entry-meta'); ?>			
@@ -31,14 +37,6 @@
       		</div>
       	</div>      	
       </div>
-      
-    </header>
-    <div class="entry-content">
-      <?php the_content(); ?>
-    </div>    
-    <br />
-    <footer>
-    
 	<?php $tags = get_the_tags($post->ID); 
 	if($tags){
 		echo '<h3>Tags</h3>';
