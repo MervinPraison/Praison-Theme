@@ -19,6 +19,7 @@
       		<div class="col-sm-4 nopadding">
       			<div class="socialmedia-share pb-3 ">
 				<span class="">Share on </span>
+				<div>
 					<?php
 					$socialURL = urlencode(get_permalink());
 
@@ -33,6 +34,7 @@
 
 					echo '<a href="'.$facebookURL.'" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>';
 					?>
+				</div>
 				</div>
       		</div>
       	</div>      	

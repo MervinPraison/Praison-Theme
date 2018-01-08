@@ -6506,9 +6506,6 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important; }
 
-body {
-  font-size: 1.1rem; }
-
 h1, .h1 {
   margin-bottom: 1rem;
   font-size: 2rem; }
