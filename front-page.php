@@ -24,6 +24,12 @@
 		</div>
 	</div>
 </div>
+<div class="container-fluid bg-light px-10 text-light">
+	<div class="row p-3">		
+	  		
+	</div>
+</div>
+
 
 <?php //get_template_part('templates/page', 'header'); ?>
 
