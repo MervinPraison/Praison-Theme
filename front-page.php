@@ -16,11 +16,11 @@
 <div class="container ">
 	<div class="row pt-5 px-3">
 		<div class="px-3">
-		<?php while (have_posts()) : the_post(); ?>
-		  <?php //get_template_part('templates/page', 'header'); ?>
-		  <?php get_template_part('templates/content', 'page'); ?>
-		  
-		<?php endwhile; ?>
+			<?php while (have_posts()) : the_post(); ?>
+			  <?php //get_template_part('templates/page', 'header'); ?>
+			  <?php get_template_part('templates/content', 'page'); ?>
+			  
+			<?php endwhile; ?>
 		</div>
 	</div>
 </div>
