@@ -26,6 +26,7 @@
 </div>
 
 <?php //get_template_part('templates/page', 'header'); ?>
+
 <?php 
 	if(get_query_var('page')) {
 		$paged = get_query_var('page');	
@@ -45,7 +46,7 @@
 <div class="container ">
 	<div class="row p-3">
 		<div class="col-md-8">
-
+			<h2>Posts</h2>
 			<?php while ($fp_query->have_posts()) : $fp_query->the_post(); ?> 
 
 			<article <?php post_class(); ?>>
