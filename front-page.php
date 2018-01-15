@@ -67,6 +67,12 @@
 		</div>
 		<div class="col-md-4">
 			<div class="clearfix"></div>
+			<?php if ( is_active_sidebar( 'sidebar-secondary' ) ) { ?>
+				
+				<?php dynamic_sidebar( 'sidebar-secondary' ); ?>
+				
+			<?php }else{ ?>
+			<h3>Tags</h3>
 			<?php echo wp_tag_cloud(); ?>			
 			<div class="clearfix"></div>
 			<br />
@@ -79,6 +85,7 @@
 	
 				) ); ?> 
 			</ul>
+			<?php } ?>
 		</div>
 	</div>
 </div>
