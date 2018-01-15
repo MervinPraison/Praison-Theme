@@ -24,12 +24,26 @@
 		</div>
 	</div>
 </div>
+<?php
+$content = get_the_content();
+if($content){
+?>
+
 <div class="container-fluid bg-light px-10 text-light">
 	<div class="row p-3">		
 	  		
 	</div>
 </div>
-
+<div class="container jumbotron">
+	<div class="row p-3">
+		<div class="col-md-6">
+		<h1>Posts</h1>
+		</div>
+		<div class="col-md-6">			
+		</div>		
+	</div>	
+</div>
+<?php } ?>
 
 <?php //get_template_part('templates/page', 'header'); ?>
 
