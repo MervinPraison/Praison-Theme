@@ -13,6 +13,7 @@
 	<div class="row p-1">		
 	</div>
 </div>-->
+<?php if(!get_query_var('page')) : ?>
 <div class="container ">
 	<div class="row pt-5 px-3">
 		<div class="px-3">
@@ -24,6 +25,7 @@
 		</div>
 	</div>
 </div>
+<?php endif; ?>
 <?php
 $content = get_the_content();
 if($content){
