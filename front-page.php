@@ -55,7 +55,7 @@ if($content){
 	}else{
 		$paged = 1;
 	}
-	$fp_query = new WP_Query( 'posts_per_page=5&paged='.$paged ); 
+	$fp_query = new WP_Query( 'posts_per_page=4&paged='.$paged ); 
 ?>
 <?php if (!$fp_query->have_posts()) : ?>
   <div class="alert alert-warning">
