@@ -1,3 +1,4 @@
+<?php if(is_front_page()) : ?>
 <?php if ( is_active_sidebar( 'mainbar-home' ) ) {  ?>
 <footer class="content-info">
 	<br /><br /><br />
@@ -72,3 +73,4 @@
 		</div>
 	</div>
 </div>
+<?php endif; ?>
