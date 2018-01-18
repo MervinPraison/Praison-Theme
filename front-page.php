@@ -51,21 +51,7 @@ if($content){
 
 <?php //get_template_part('templates/page', 'header'); ?>
 
-<?php 
-	if(get_query_var('page')) {
-		$paged = get_query_var('page');	
-	}elseif(get_query_var('paged')){
-		$paged = get_query_var('paged');
-	}else{
-		$paged = 1;
-	}
-	$fp_query = new WP_Query( 'posts_per_page=4&paged='.$paged ); 
-?>
-<?php if (!$fp_query->have_posts()) : ?>
-  <div class="alert alert-warning">
-    <?php _e('Sorry, no results were found.', 'sage'); ?>
-  </div>
-<?php endif; ?>
+
 <?php } ?>
 <div class="container ">
 	<div class="row p-3">
@@ -74,6 +60,23 @@ if($content){
 			<?php if ( is_active_sidebar( 'mainbar-home' ) ) { ?>				
 				<?php dynamic_sidebar( 'mainbar-home' ); ?>				
 			<?php }else{ ?>
+			<!-- Loop Start -->
+				<?php 
+					if(get_query_var('page')) {
+						$paged = get_query_var('page');	
+					}elseif(get_query_var('paged')){
+						$paged = get_query_var('paged');
+					}else{
+						$paged = 1;
+					}
+					$fp_query = new WP_Query( 'posts_per_page=4&paged='.$paged ); 
+				?>
+			<!-- Query End -->	
+				<?php if (!$fp_query->have_posts()) : ?>
+				  <div class="alert alert-warning">
+				    <?php _e('Sorry, no results were found.', 'sage'); ?>
+				  </div>
+				<?php endif; ?>
 			<h2>Posts</h2>
 			<?php while ($fp_query->have_posts()) : $fp_query->the_post(); ?> 
 
@@ -92,6 +95,7 @@ if($content){
 				<?php if( get_previous_posts_link('&laquo; PREV', $fp_query->max_num_pages) ) { ?> <li class='page-item'><span class='page-link'><?php previous_posts_link( '&laquo; Newer Posts', $fp_query->max_num_pages) ?></span></li><?php } ?>
 				<?php if( get_next_posts_link('NEXT &raquo;', $fp_query->max_num_pages) ) { ?> <li class='page-item'><span class='page-link'><?php next_posts_link( 'Older Posts &raquo;', $fp_query->max_num_pages) ?></span></li><?php } ?>
 			</ul>
+			<!-- Loop Ends -->
 			<?php } ?>
 		</div>
 		<div class="col-md-4">
