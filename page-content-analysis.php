@@ -3,9 +3,9 @@
  * Template Name: Content Analysis
  */
 ?>
-<script type="text/javascript" src="http://localhost/misc/roots/raw3/wp-content/themes/praison-theme/dist/scripts/bundle2.js"></script>
-<link rel="stylesheet" href="http://localhost/misc/roots/raw3/wp-content/themes/praison-theme/dist/styles/style.css">
-<link rel="stylesheet" href="http://localhost/misc/roots/raw3/wp-content/themes/praison-theme/dist/styles/yoast.min.css">
+<script type="text/javascript" src="https://seomanageruk.com/wp-content/themes/praison-theme/dist/scripts/bundle2.js"></script>
+<link rel="stylesheet" href="https://seomanageruk.com/wp-content/themes/praison-theme/dist/styles/style.css">
+<link rel="stylesheet" href="https://seomanageruk.com/wp-content/themes/praison-theme/dist/styles/yoast.min.css">
 
 
 
