@@ -7,7 +7,10 @@
 <link rel="stylesheet" href="https://seomanageruk.com/wp-content/themes/praison-theme/dist/styles/style.css">
 <link rel="stylesheet" href="https://seomanageruk.com/wp-content/themes/praison-theme/dist/styles/yoast.min.css">
 
-
+<?php while (have_posts()) : the_post(); ?>
+  <?php get_template_part('templates/page', 'header'); ?>
+  <?php get_template_part('templates/content', 'page'); ?>
+<?php endwhile; ?>
 
 
 <div class="site-container">
