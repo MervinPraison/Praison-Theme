@@ -20,7 +20,7 @@
 					}else{
 						$paged = 1;
 					}
-					$fp_query = new WP_Query( 'posts_per_page=10&paged='.$paged ); 
+					$fp_query = new WP_Query( 'posts_per_page=15&paged='.$paged ); 
 				?>
 			<!-- Query End -->	
 				<?php if (!$fp_query->have_posts()) : ?>
