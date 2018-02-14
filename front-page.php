@@ -32,12 +32,6 @@ if ( !is_active_sidebar( 'mainbar-home' ) ) {
 $content = get_the_content();
 if($content){
 ?>
-
-<div class="container-fluid bg-light px-10 text-light">
-	<div class="row p-3">		
-	  		
-	</div>
-</div>
 <div class="container jumbotron">
 	<div class="row p-3">
 		<div class="col-md-6">
