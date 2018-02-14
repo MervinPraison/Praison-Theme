@@ -13,15 +13,14 @@
 	<div class="row p-1">		
 	</div>
 </div>-->
-<?php $content = get_the_content(); ?> 
-<?php if(!get_query_var('page') && empty($content)) : ?>
+<?php $content = get_post(get_the_ID())->post_content; ?> 
+<?php if(!get_query_var('page') && $content) : ?>
 <div class="container ">
 	<div class="row pt-5 px-3">
 		<div class="px-3">
 			<?php while (have_posts()) : the_post(); ?>
 			  <?php //get_template_part('templates/page', 'header'); ?>
-			  <?php get_template_part('templates/content', 'page'); ?>
-			  
+			  <?php get_template_part('templates/content', 'page'); ?>			  
 			<?php endwhile; ?>
 		</div>
 	</div>
