@@ -13,8 +13,8 @@
 	<div class="row p-1">		
 	</div>
 </div>-->
-<?php $content = get_the_content(); ?> 
-<?php if(!get_query_var('page') && $content) : ?>
+
+<?php if(!get_query_var('page') && !is_front_page()) : ?>
 <div class="container ">
 	<div class="row pt-5 px-3">
 		<div class="px-3">
@@ -27,11 +27,8 @@
 	</div>
 </div>
 <?php endif; ?>
-<?php
-
-if ( !is_active_sidebar( 'mainbar-home' )&& $content) { 
-
-?>
+<?php $content = get_the_content(); ?> 
+<?php if ( !is_active_sidebar( 'mainbar-home' )&& $content) { ?>
 
 <div class="container-fluid bg-light px-10 text-light">
 	<div class="row p-3">		
