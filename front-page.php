@@ -13,7 +13,8 @@
 	<div class="row p-1">		
 	</div>
 </div>-->
-<?php if(!get_query_var('page')) : ?>
+<?php $content = get_the_content(); ?> 
+<?php if(!get_query_var('page') && $content) : ?>
 <div class="container ">
 	<div class="row pt-5 px-3">
 		<div class="px-3">
@@ -28,10 +29,15 @@
 <?php endif; ?>
 <?php
 
-if ( !is_active_sidebar( 'mainbar-home' ) ) { 
-$content = get_the_content();
-if($content){
+if ( !is_active_sidebar( 'mainbar-home' )&& $content) { 
+
 ?>
+
+<div class="container-fluid bg-light px-10 text-light">
+	<div class="row p-3">		
+	  		
+	</div>
+</div>
 <div class="container jumbotron">
 	<div class="row p-3">
 		<div class="col-md-6">
@@ -41,7 +47,7 @@ if($content){
 		</div>		
 	</div>	
 </div>
-<?php } ?>
+
 
 <?php //get_template_part('templates/page', 'header'); ?>
 
