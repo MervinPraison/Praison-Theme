@@ -14,7 +14,7 @@
 	</div>
 </div>-->
 <?php $content = get_the_content(); ?> 
-<?php if(!get_query_var('page') && is_front_page() && $content) : ?>
+<?php if(!get_query_var('page') && empty($content)) : ?>
 <div class="container ">
 	<div class="row pt-5 px-3">
 		<div class="px-3">
