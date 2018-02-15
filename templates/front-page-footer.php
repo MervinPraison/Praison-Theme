@@ -8,13 +8,15 @@
 	<div class="row p-3">
 		<div class="col-md-8">
 			<div class="clearfix"></div>
+			<?php //global $paged;global $page;?>
 			<?php if ( is_active_sidebar( 'mainbar-home' ) ) { ?>				
 				<?php dynamic_sidebar( 'mainbar-home' ); ?>				
 			<?php }else{ ?>
 			<!-- Loop Start -->
+			<?php  global $paged; ?>
 				<?php 
 					if(get_query_var('page')) {
-						$paged = get_query_var('page');	
+						$paged = get_query_var('page');
 					}elseif(get_query_var('paged')){
 						$paged = get_query_var('paged');
 					}else{
@@ -42,10 +44,27 @@
 			</article>
 			<?php endwhile; ?>
 			<br />
+
 			<ul class="pagination">
 				<?php if( get_previous_posts_link('&laquo; PREV', $fp_query->max_num_pages) ) { ?> <li class='page-item'><span class='page-link'><?php previous_posts_link( '&laquo; Newer Posts', $fp_query->max_num_pages) ?></span></li><?php } ?>
 				<?php if( get_next_posts_link('NEXT &raquo;', $fp_query->max_num_pages) ) { ?> <li class='page-item'><span class='page-link'><?php next_posts_link( 'Older Posts &raquo;', $fp_query->max_num_pages) ?></span></li><?php } ?>
 			</ul>
+
+			<?php
+			$big = 999999999; // need an unlikely integer
+
+			echo paginate_links( array(
+				'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+				'format' => '?page=%#%',
+				'current' => max( 1, $paged ),
+				'mid_size' => 6,
+				'total' => $fp_query->max_num_pages
+			) );
+			?>
+			
+			<?php wp_reset_query();  ?>
+			<?php wp_reset_postdata(); ?>
+			
 			<!-- Loop Ends -->
 			<?php } ?>
 		</div>
